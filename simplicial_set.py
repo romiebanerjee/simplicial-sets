@@ -40,8 +40,8 @@ a = simplex(1,"a")
 
 A.faces = [a,a,a]
 
-A.is_simplex()
 A.display()
+
 X = SimplicialSet("X", {A,a},set())
 
 
