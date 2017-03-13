@@ -1,0 +1,52 @@
+def flatten(A):
+	if A == []: return A
+	if type(A[0]) == list:
+		return flatten(A[0]) + flatten(A[1:])
+	else: return [A[0]] + flatten(A[1:])
+
+def depth(A):
+	if A == []: return -1
+	if type(A) == list:
+		return 1 + max(depth(a) for a in A)
+	else: return -1
+	
+def isnode(A,x):
+	if x in flatten(A): return True
+	else: return False
+
+def locate(L,x): 
+	out =""
+	if x in L: return str(L.index(x))
+	else:
+		for l in L:
+			if isinstance(l,list):
+				if isnode(l,x):
+					out += str(L.index(l)) + str(locate(L,x))
+	return out				
+
+def addressnode(L,address):
+	node = L
+	for turn in address:
+		node = node[int(turn)]
+	return node	
+
+def depthcopy(L):
+	d = depth(L)
+	out = []
+	if L == []: return []
+	for x in L:
+		if type(x) == list: out.append(depthcopy(x))
+		else: out.append(str(d) + "-" + str(x))
+	return out
+
+def depthcopyreplace(L,A,B):
+	d = depth(L)
+	out = []
+	if L == []: return []
+	for x in L: 
+		if type(x) == list: out.append(depthcopyreplace(x,A,B))
+		else:
+			if x in A: out.append(str(B[d]))
+			else: out.append(x)
+	return out
+			
