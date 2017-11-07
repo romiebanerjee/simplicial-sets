@@ -2,7 +2,13 @@ Simplicial sets are a powerful generalization of simplicial complexes that allow
 
 There is one file sset.py containing three class 
 
-scomplex (SIMPLICIAL COMPLEX)
-semi_sset (SEMI-SIMPLIAL SET/ DELTA COMPLEX)
-sset (SIMPLCIAL SET)
+- scomplex (SIMPLICIAL COMPLEX)
+- semi_sset (SEMI-SIMPLIAL SET/ DELTA COMPLEX)
+- sset (SIMPLICIAL SET)
+
+For definitions of these objects see
+
+- Simplicial complex (Wikipedia page) (https://en.wikipedia.org/wiki/Simplicial_complex)
+- Simplcial set (Wikipedia page) (https://en.wikipedia.org/wiki/Simplicial_set)
+- Semi-simplical set (Algebraic Topology - A. Hatcher) (https://www.math.cornell.edu/~hatcher/AT/ATpage.html)
 
