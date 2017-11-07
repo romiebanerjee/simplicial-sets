@@ -398,39 +398,3 @@ def depthcopyreplace(L,A,B):
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Examples
-
-Z = scomplex(["xy","yz","xz","zw","xyz","yzw","xzw","xyw","abcd"])
-
-#print(Z.simplices)
-#print(Z.Sigma(0))
-#print(Z.Sigma(1))
-#print(Z.Sigma(2))
-
-#print("Betti numbers =",Z.betti())
-#Y = scomplex_to_sset(Z)
-
-X = sset([{"x","y","z"},{"a","b","c"},{"A"}], ["A",["a",["x",[]],["y",[]]],["b",["y",[]],["z",[]]],["c",["x",[]],["z",[]]]])
-
-#Q = X.simplexcollapse("a")
-
-#print(Q.simplices)
-#print(Q.structuretree)
-
-
-#print("Betti numbers=", Q.betti())
-
-#Q1 = Q.simplexcollapse("b")
-
-#print(Q1.simplices)
-#print(Q1.structuretree)
-#print("Betti numbers=", Q1.betti())
-
-#Q2 = Q1.simplexcollapse("c")
-#print(Q2.simplices)
-#print(Q2.structuretree)
-#print("Betti numbers=", Q2.betti())
-
-
-C = sset([{"x","y","z"},{"a","b","c"}],[["a",["x",[]],["y",[]]],["b",["y",[]],["z",[]]],["c",["x",[]],["z",[]]]])
-
