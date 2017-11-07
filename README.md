@@ -9,6 +9,6 @@ There is one file sset.py containing three class
 For definitions of these objects see
 
 - Simplicial complex (Wikipedia page) (https://en.wikipedia.org/wiki/Simplicial_complex)
-- Simplcial set (Wikipedia page) (https://en.wikipedia.org/wiki/Simplicial_set)
+- Simplicial set (Wikipedia page) (https://en.wikipedia.org/wiki/Simplicial_set)
 - Semi-simplical set (Algebraic Topology - A. Hatcher) (https://www.math.cornell.edu/~hatcher/AT/ATpage.html)
 
