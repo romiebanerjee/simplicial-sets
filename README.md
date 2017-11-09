@@ -1,8 +1,11 @@
 ## Python implementation of simplicial sets
 
-Simplicial sets are a powerful generalization of simplicial complexes that allow quotient operations. We define data structures for simplicial sets and implement them in python. Eventually we want to do topological data analysis of point cloud data using simplicial sets as the objects representing homotopy types/ topological spaces.  
+ Data structures for simplicial sets are implemented in python. Simplicial sets are purely algebraic structures which are able to capture the homotopy theory of topological spaces. There are more general than the more geometric simplcial complexes. One essential difference between simplicial sets and simplicial complexes is that the former category is cocomplete (so that one can do collapsing operations on simplicial sets). 
 
-There is one file sset.py defining three classes
+
+Eventually we want to do topological data analysis of point cloud data using simplicial sets as the objects representing homotopy types/ topological spaces.  
+
+There is one file sset.py defining three classes (implementing data structures for)
 
 - scomplex (SIMPLICIAL COMPLEX)
 - semi_sset (SEMI-SIMPLIAL SET/ DELTA COMPLEX)
